@@ -1,0 +1,424 @@
+In file included from p0f.c:46:
+p0f.c: In function ‘close_spare_fds’:
+p0f.c:211:46: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  211 |     SAYF("[+] Closed %u file descriptor%s.\n", closed, closed == 1 ? "" : "s" );
+      |                                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:211:54: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  211 |     SAYF("[+] Closed %u file descriptor%s.\n", closed, closed == 1 ? "" : "s" );
+      |                                                      ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:211:54: warning: statement with no effect [-Wunused-value]
+  211 |     SAYF("[+] Closed %u file descriptor%s.\n", closed, closed == 1 ? "" : "s" );
+      |                                                      ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘open_log’:
+p0f.c:249:49: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  249 |   SAYF("[+] Log file '%s' opened for writing.\n", log_file);
+      |                                                 ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:249:8: warning: statement with no effect [-Wunused-value]
+  249 |   SAYF("[+] Log file '%s' opened for writing.\n", log_file);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘open_api’:
+p0f.c:302:62: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  302 |   SAYF("[+] Listening on API socket '%s' (max %u clients).\n",
+      |                                                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:303:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  303 |        api_sock, api_max_conn);
+      |                ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:302:8: warning: statement with no effect [-Wunused-value]
+  302 |   SAYF("[+] Listening on API socket '%s' (max %u clients).\n",
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘start_observation’:
+p0f.c:317:25: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  317 |     SAYF(".-[ %s/%u -> ", addr_to_str(f->client->addr, f->client->ip_ver),
+      |                         ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:317:74: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  317 |     SAYF(".-[ %s/%u -> ", addr_to_str(f->client->addr, f->client->ip_ver),
+      |                                                                          ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:319:30: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  319 |     SAYF("%s/%u (%s) ]-\n|\n", addr_to_str(f->server->addr, f->client->ip_ver),
+      |                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:319:79: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  319 |     SAYF("%s/%u (%s) ]-\n|\n", addr_to_str(f->server->addr, f->client->ip_ver),
+      |                                                                               ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:320:21: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  320 |          f->srv_port, keyword);
+      |                     ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:322:28: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  322 |     SAYF("| %-8s = %s/%u\n", to_srv ? "client" : "server",
+      |                            ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:322:58: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  322 |     SAYF("| %-8s = %s/%u\n", to_srv ? "client" : "server",
+      |                                                          ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:324:45: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  324 |          f->server->addr, f->client->ip_ver),
+      |                                             ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘add_observation_field’:
+p0f.c:356:25: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  356 |     SAYF("| %-8s = %s\n", key, value ? value : (u8*)"???");
+      |                         ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:356:30: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  356 |     SAYF("| %-8s = %s\n", key, value ? value : (u8*)"???");
+      |                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:356:30: warning: statement with no effect [-Wunused-value]
+  356 |     SAYF("| %-8s = %s\n", key, value ? value : (u8*)"???");
+      |                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:363:28: warning: statement with no effect [-Wunused-value]
+  363 |     if (!daemon_mode) SAYF("|\n`----\n\n");
+      |                            ^~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘list_interfaces’:
+p0f.c:391:8: warning: statement with no effect [-Wunused-value]
+  391 |   SAYF("\n-- Available interfaces --\n");
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:397:37: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  397 |     SAYF("\n%3d: Name        : %s\n", i++, dev->name);
+      |                                     ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:397:42: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  397 |     SAYF("\n%3d: Name        : %s\n", i++, dev->name);
+      |                                          ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:398:35: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  398 |     SAYF("     Description : %s\n", dev->description ? dev->description : "-");
+      |                                   ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:398:35: warning: statement with no effect [-Wunused-value]
+  398 |     SAYF("     Description : %s\n", dev->description ? dev->description : "-");
+      |                                   ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:408:39: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  408 |         SAYF("     IP address  : %s\n", addr_to_str(((u8*)a->addr) + 4, IP_VER4));
+      |                                       ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:410:39: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  410 |         SAYF("     IP address  : %s\n", addr_to_str(((u8*)a->addr) + 8, IP_VER6));
+      |                                       ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:412:18: warning: statement with no effect [-Wunused-value]
+  412 |      } else SAYF("     IP address  : (none)\n");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:416:8: warning: statement with no effect [-Wunused-value]
+  416 |   SAYF("\n");
+      |        ^~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘prepare_pcap’:
+p0f.c:475:53: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  475 |     SAYF("[+] Will read pcap data from file '%s'.\n", read_file);
+      |                                                     ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:475:10: warning: statement with no effect [-Wunused-value]
+  475 |     SAYF("[+] Will read pcap data from file '%s'.\n", read_file);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:485:9: warning: ‘pcap_lookupdev’ is deprecated: use 'pcap_findalldevs' and use the first device [-Wdeprecated-declarations]
+  485 |         use_iface = (u8*)pcap_lookupdev(pcap_err);
+      |         ^~~~~~~~~
+In file included from /usr/include/pcap.h:43,
+                 from p0f.c:37:
+/usr/include/pcap/pcap.h:394:18: note: declared here
+  394 | PCAP_API char   *pcap_lookupdev(char *)
+      |                  ^~~~~~~~~~~~~~
+In file included from p0f.c:46:
+p0f.c:519:67: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  519 |       SAYF("[+] Intercepting traffic on default interface '%s'.\n", use_iface);
+      |                                                                   ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:519:12: warning: statement with no effect [-Wunused-value]
+  519 |       SAYF("[+] Intercepting traffic on default interface '%s'.\n", use_iface);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:521:59: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  521 |       SAYF("[+] Intercepting traffic on interface '%s'.\n", use_iface);
+      |                                                           ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:521:12: warning: statement with no effect [-Wunused-value]
+  521 |       SAYF("[+] Intercepting traffic on interface '%s'.\n", use_iface);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘prepare_bpf’:
+p0f.c:603:56: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  603 |     SAYF("[+] Default packet filtering configured%s.\n",
+      |                                                        ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:603:56: warning: statement with no effect [-Wunused-value]
+  603 |     SAYF("[+] Default packet filtering configured%s.\n",
+      |                                                        ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:608:53: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  608 |     SAYF("[+] Custom filtering rule enabled: %s%s\n",
+      |                                                     ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:609:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  609 |          orig_rule ? orig_rule : (u8*)"tcp",
+      |                                            ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:609:44: warning: statement with no effect [-Wunused-value]
+  609 |          orig_rule ? orig_rule : (u8*)"tcp",
+      |                                            ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘drop_privs’:
+p0f.c:659:62: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  659 |   SAYF("[+] Privileges dropped: uid %u, gid %u, root '%s'.\n",
+      |                                                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:660:18: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  660 |        pw->pw_uid, pw->pw_gid, pw->pw_dir);
+      |                  ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:660:30: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  660 |        pw->pw_uid, pw->pw_gid, pw->pw_dir);
+      |                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:660:30: warning: statement with no effect [-Wunused-value]
+  660 |        pw->pw_uid, pw->pw_gid, pw->pw_dir);
+      |                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘fork_off’:
+p0f.c:707:61: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  707 |     SAYF("[+] Daemon process created, PID %u (stderr %s).\n", npid,
+      |                                                             ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:707:67: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  707 |     SAYF("[+] Daemon process created, PID %u (stderr %s).\n", npid,
+      |                                                                   ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:710:10: warning: statement with no effect [-Wunused-value]
+  710 |     SAYF("\nGood luck, you're on your own now!\n");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘live_event_loop’:
+p0f.c:799:10: warning: statement with no effect [-Wunused-value]
+  799 |     SAYF("[+] Entered main event loop.\n\n");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘offline_event_loop’:
+p0f.c:1001:10: warning: statement with no effect [-Wunused-value]
+ 1001 |     SAYF("[+] Processing capture data.\n\n");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c: In function ‘main’:
+p0f.c:1022:8: warning: statement with no effect [-Wunused-value]
+ 1022 |   SAYF("--- p0f " VERSION " by Michal Zalewski <lcamtuf@coredump.cx> ---\n\n");
+      |        ^~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:1189:12: warning: statement with no effect [-Wunused-value]
+ 1189 |       SAYF("[!] Consider specifying -u in daemon mode (see README).\n");
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:1228:49: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ 1228 |     SAYF("\nAll done. Processed %llu packets.\n", packet_cnt);
+      |                                                 ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+p0f.c:1228:10: warning: statement with no effect [-Wunused-value]
+ 1228 |     SAYF("\nAll done. Processed %llu packets.\n", packet_cnt);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+In file included from /usr/include/string.h:535,
+                 from alloc-inl.h:15,
+                 from api.c:20:
+In function ‘strncpy’,
+    inlined from ‘handle_query’ at api.c:73:5:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ specified bound 32 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘strncpy’,
+    inlined from ‘handle_query’ at api.c:77:8:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ specified bound 32 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘strncpy’,
+    inlined from ‘handle_query’ at api.c:83:5:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ specified bound 32 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘strncpy’,
+    inlined from ‘handle_query’ at api.c:87:7:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ specified bound 32 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘strncpy’,
+    inlined from ‘handle_query’ at api.c:92:5:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ specified bound 32 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘strncpy’,
+    inlined from ‘handle_query’ at api.c:95:5:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ specified bound 32 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from readfp.c:27:
+readfp.c: In function ‘read_config’:
+readfp.c:444:46: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  444 |     SAYF("[!] No signatures found in '%s'.\n", fname);
+      |                                              ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+readfp.c:444:10: warning: statement with no effect [-Wunused-value]
+  444 |     SAYF("[!] No signatures found in '%s'.\n", fname);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+readfp.c:446:50: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  446 |     SAYF("[+] Loaded %u signature%s from '%s'.\n", sig_cnt,
+      |                                                  ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+readfp.c:446:59: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  446 |     SAYF("[+] Loaded %u signature%s from '%s'.\n", sig_cnt,
+      |                                                           ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+readfp.c:447:33: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  447 |          sig_cnt == 1 ? "" : "s", fname);
+      |                                 ^
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^
+readfp.c:446:10: warning: statement with no effect [-Wunused-value]
+  446 |     SAYF("[+] Loaded %u signature%s from '%s'.\n", sig_cnt,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+debug.h:24:23: note: in definition of macro ‘SAYF’
+   24 | #define SAYF(x...)    x
+      |                       ^

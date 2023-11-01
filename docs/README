@@ -7,18 +7,6 @@
 
          Copyright (C) 2012 by Michal Zalewski <lcamtuf@coredump.cx>
 
----------------------------------
-1. What's modified in this fork?
----------------------------------
-
-Love this utility but perplexed by the bizarre array of output formats. You get the non-greppable default to stdout which is nice but only to look at. you get the more manageable and grepable but still odd and archaic ``|`` separated file when outputting with ``-o`` and you get the api which lets you query info about specific ip addresses as far as i could tell but wont give you a stream of data to work with. So I hacked this fork to do the default output as json to stdout. It is not nice, and was impolemented by swapping around header defs of the macros used for output, and modifying the code used to do the ``-o file`` output, to instead do json. 
-
-so the changes are:
-
-- json output to stdout, equivalent information as ``-o`` in the standard distribution
-- updated signature database (fingerprints)[https://github.com/mat-1/p0f/blob/main/p0f.fp] 
-
-
 
 
 ---------------
